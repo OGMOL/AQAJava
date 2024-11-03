@@ -9,6 +9,7 @@ public class Main {
     }
 
     /**
+     * Task1
      * Метод выводит три слова в столбец.
      */
     public static void printThreeWords() {
@@ -16,6 +17,7 @@ public class Main {
     }
 
     /**
+     * Task2
      * Метод проверяет сумму двух переменных и выводит,
      * положительная или отрицательная сумма.
      */
@@ -32,6 +34,7 @@ public class Main {
     }
 
     /**
+     * Task3
      * Метод выводит цвет в зависимости от значения переменной value.
      */
     public static void printColor() {
@@ -47,6 +50,7 @@ public class Main {
     }
 
     /**
+     * Task3
      * Метод сравнивает два числа и выводит результат сравнения.
      */
     public static void compareNumbers() {
@@ -58,5 +62,14 @@ public class Main {
         } else {
             System.out.println("a < b");
         }
+    }
+
+    /**
+     * Task5
+     * Метод проверяет, лежит ли сумма двух чисел в пределах от 10 до 20 (включительно).
+     */
+    public static boolean isSumInRange(int a, int b) {
+        int sum = a + b;
+        return sum >= 10 && sum <= 20;
     }
 }
