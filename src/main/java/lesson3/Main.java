@@ -5,6 +5,7 @@ public class Main {
         printThreeWords();
         checkSumSing();
         printColor();
+        compareNumbers();
     }
 
     /**
@@ -42,6 +43,20 @@ public class Main {
             System.out.println("Желтый");
         } else {
             System.out.println("Зеленый");
+        }
+    }
+
+    /**
+     * Метод сравнивает два числа и выводит результат сравнения.
+     */
+    public static void compareNumbers() {
+        int a = 5;
+        int b = 8;
+
+        if (a >= b) {
+            System.out.println("a >= b");
+        } else {
+            System.out.println("a < b");
         }
     }
 }
