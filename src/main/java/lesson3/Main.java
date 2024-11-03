@@ -1,5 +1,7 @@
 package lesson3;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         printThreeWords();
@@ -10,6 +12,7 @@ public class Main {
         System.out.println(isPositiveOrNegative(0));
         printString("AstonJava", 5);
         System.out.println(isLeapYear(1000));
+        replaceZerosAndOnes();
     }
 
     /**
@@ -119,5 +122,23 @@ public class Main {
             return true;
         }
         return false;
+    }
+
+    /**
+     * Task10
+     * Метод создает массив, состоящий из 0 и 1, и заменяет 0 на 1, а 1 на 0.
+     */
+    public static void replaceZerosAndOnes() {
+        int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                array[i] = 1;
+            } else {
+                array[i] = 0;
+            }
+        }
+
+        System.out.println(Arrays.toString(array));
     }
 }
