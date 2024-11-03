@@ -7,6 +7,7 @@ public class Main {
         printColor();
         compareNumbers();
         positiveOrNegative(-22);
+        System.out.println(isPositiveOrNegative(0));
     }
 
     /**
@@ -84,6 +85,14 @@ public class Main {
         } else {
             System.out.println("Отрицательное");
         }
+    }
+
+    /**
+     * Task7
+     * Метод проверяет, является ли переданное число отрицательным.
+     */
+    public static boolean isPositiveOrNegative(int a) {
+        return a < 0;
     }
 
 }
