@@ -6,6 +6,7 @@ public class Main {
         checkSumSing();
         printColor();
         compareNumbers();
+        positiveOrNegative(-22);
     }
 
     /**
@@ -72,4 +73,17 @@ public class Main {
         int sum = a + b;
         return sum >= 10 && sum <= 20;
     }
+
+    /**
+     * Task6
+     * Метод проверяет, положительное или отрицательное число передано в качестве параметра.
+     */
+    public static void positiveOrNegative(int a) {
+        if (a >= 0) {
+            System.out.println("Положительное");
+        } else {
+            System.out.println("Отрицательное");
+        }
+    }
+
 }
