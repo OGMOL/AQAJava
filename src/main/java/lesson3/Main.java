@@ -8,6 +8,7 @@ public class Main {
         compareNumbers();
         positiveOrNegative(-22);
         System.out.println(isPositiveOrNegative(0));
+        printString("AstonJava", 5);
     }
 
     /**
@@ -95,4 +96,13 @@ public class Main {
         return a < 0;
     }
 
+    /**
+     * Task8
+     * Метод выводит переданную строку указанное количество раз.
+     */
+    public static void printString(String str, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println(str);
+        }
+    }
 }
