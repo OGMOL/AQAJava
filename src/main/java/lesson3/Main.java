@@ -9,6 +9,7 @@ public class Main {
         positiveOrNegative(-22);
         System.out.println(isPositiveOrNegative(0));
         printString("AstonJava", 5);
+        System.out.println(isLeapYear(1000));
     }
 
     /**
@@ -104,5 +105,19 @@ public class Main {
         for (int i = 0; i < count; i++) {
             System.out.println(str);
         }
+    }
+
+    /**
+     * Task9
+     * Метод определяет, является ли год високосным.
+     */
+    public static boolean isLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                return year % 400 == 0;
+            }
+            return true;
+        }
+        return false;
     }
 }
