@@ -16,6 +16,7 @@ public class Main {
         fillArray();
         multiplyingLessThenSixArray();
         fillDiagonal();
+        System.out.println(Arrays.toString(createArray(10,5)));
     }
 
     /**
@@ -194,5 +195,19 @@ public class Main {
             }
             System.out.println();
         }
+    }
+
+    /**
+     * Task14
+     * Метод создает одномерный массив типа int заданной длины и заполняет его значением initialValue.
+     */
+    public static int[] createArray(int len, int initialValue) {
+        int[] array = new int[len];
+
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue;
+        }
+
+        return array;
     }
 }
