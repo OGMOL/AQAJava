@@ -8,6 +8,9 @@ public class Employee {
     private int salary;
     private int age;
 
+    /**
+     * Конструктор
+     */
     public Employee(String fio, String position, String email, String phoneNumber, int salary, int age) {
         this.fio = fio;
         this.position = position;
@@ -17,6 +20,9 @@ public class Employee {
         this.age = age;
     }
 
+    /**
+     * Метод, который выводит информацию об объекте в консоль
+     */
     public void printInfo() {
         System.out.println("Фио: " + fio);
         System.out.println("Должность: " + position);
@@ -24,5 +30,6 @@ public class Employee {
         System.out.println("Телефон: " + phoneNumber);
         System.out.println("Зарплата: " + salary);
         System.out.println("Возраст: " + age);
+        System.out.println("----------------------------");
     }
 }
