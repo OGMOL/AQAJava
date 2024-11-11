@@ -1,14 +1,17 @@
 package lesson4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Park {
 
-    public class Attraction {
+    private class Attraction {
         private String name;
         private String workingHours;
         private double price;
 
         /**
-         * Конструктор
+         * Конструктор класса Attraction
          */
         public Attraction(String name, String workingHours, double price) {
             this.name = name;
@@ -26,4 +29,27 @@ public class Park {
             System.out.println("----------------------------");
         }
     }
+
+    /**
+     * Список аттракционов, который принадлежит классу Park
+     */
+    private ArrayList<Attraction> attractions = new ArrayList<>();
+
+    /**
+     * Метод для добавления аттракционов
+     */
+    public void addAttraction(String name, String workingHours, double price) {
+        Attraction attraction = new Attraction(name, workingHours, price);
+        attractions.add(attraction);
+    }
+
+    /**
+     * Метод для вывода информации об аттракционах
+     */
+    public void printAllAttractions() {
+        for (Attraction attraction : attractions) {
+            attraction.printInfo();
+        }
+    }
 }
+
