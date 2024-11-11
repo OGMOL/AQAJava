@@ -1,4 +1,4 @@
-package lesson5;
+package lesson5.task1;
 
 public abstract class Animal {
     private static int count =0;
@@ -6,7 +6,7 @@ public abstract class Animal {
     /**
      * Счетчик для всех животных
      */
-    private Animal() {
+    protected Animal() {
         count++;
     }
 
